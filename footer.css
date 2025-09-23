@@ -1,0 +1,10 @@
+body{
+    height: 100vh;
+      display: flex;
+        justify-content: center;  
+}
+footer{
+    display: flex;  
+    align-self: flex-end;
+    text-align: center;
+}
