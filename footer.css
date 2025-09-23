@@ -1,10 +1,18 @@
 body{
     height: 100vh;
-      display: flex;
-        justify-content: center;  
+    margin: 0;
 }
+
+.fill {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 footer{
-    display: flex;  
-    align-self: flex-end;
-    text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
 }
