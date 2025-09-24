@@ -4,11 +4,19 @@ body{
 }
 
 header{
+    height: 50px;
+    padding: 5px 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
     background-color: lightblue;
+}
+
+.right-section,.left-section,.middle-section{
+  display: flex;
+}
+
+.main-logo{
+  height: 100%;
 }
 
 main{
