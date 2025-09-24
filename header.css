@@ -31,13 +31,14 @@ main {
 
 .profile {
   margin: 15px;
-  height: 260px;
-  width: 200px;
+  width: 220px;
   border-radius: 12px;
   overflow: hidden;
   background: #1e293b; /* dark card background */
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile:hover {
@@ -47,7 +48,7 @@ main {
 
 .profile-pic {
   height: 200px;
-  width: 200px;
+  width: 100%;
 }
 
 .profile-pic img {
@@ -55,7 +56,9 @@ main {
   width: 100%;
   object-fit: cover;
 }
-
+h4{
+  margin: 0 ;
+}
 .profile-username {
   text-align: center;
   padding: 8px;
@@ -63,4 +66,17 @@ main {
   color: #f8fafc;
   font-weight: bold;
   font-size: 1rem;
+  height: 10px;
+  line-height: 10px;
+}
+
+.profile-info {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #e2e8f0; /* light gray text for readability */
+  background: #1e293b;
+}
+
+.profile-info p {
+  margin: 5px 0;
 }
