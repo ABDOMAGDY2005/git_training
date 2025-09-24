@@ -6,34 +6,63 @@ body {
   color: #f1f5f9; /* light text */
 }
 
-header{
-    height: 50px;
-    padding: 5px 20px;
-    display: flex;
-    justify-content: space-between;
-    background-color: lightblue;
 header {
+  height: 70px;
+  padding: 0 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: center;         /* vertical centering */
+  justify-content: space-between;
   background: linear-gradient(90deg, #2563eb, #3b82f6); /* blue gradient */
   color: white;
-  padding: 20px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.right-section,.left-section,.middle-section{
+.left-section,
+.middle-section,
+.right-section {
   display: flex;
+  align-items: center;
 }
 
-.main-logo{
-  height: 100%;
+.main-logo {
+  height: 45px;
+}
+
+.middle-section input {
+  width: 350px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.middle-section input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.middle-section input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.right-section button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #1e293b;
+  color: #f1f5f9;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.right-section button:hover {
+  background: #0f172a;
+  transform: scale(1.05);
 }
 
 main {
